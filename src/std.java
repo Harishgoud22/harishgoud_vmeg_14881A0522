@@ -71,7 +71,12 @@ public class Student implements Comparable {
 
 	@Override
 	public int hashCode() {
-		return super.hashCode();
+		Map<Int, String> m = new HashMap<Int, String>();
+		m.put(this.id);
+		m.put(this.fullName);
+		m.put(this.birthDate);
+		m.put(this.avgMark);
+		return m.hashCode();
 	}
 
 	@Override
